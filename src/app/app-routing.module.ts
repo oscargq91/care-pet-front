@@ -6,6 +6,7 @@ import { ProductosComponent } from './productos/productos.component';
 import { FormProductoComponent } from './productos/form-producto.component';
 import { VentaComponent } from './venta/venta.component';
 import { ServicioComponent } from './servicio/servicio.component';
+import { FormServicioComponent } from './servicio/form-servicio.component';
 
 const routes: Routes = [
   {path: '', redirectTo:'/categorias',pathMatch:'full'},
@@ -17,6 +18,8 @@ const routes: Routes = [
   {path: 'productos/form/:id', component: FormProductoComponent},
   {path: 'ventas', component: VentaComponent},
   {path: 'servicios', component: ServicioComponent},
+  {path: 'servicios/form', component: FormServicioComponent},
+  {path: 'servicios/form/:id', component: FormServicioComponent},
 ];
 
 @NgModule({

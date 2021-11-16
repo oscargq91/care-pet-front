@@ -15,6 +15,7 @@ import { FormProductoComponent } from './productos/form-producto.component';
 import { VentaComponent } from './venta/venta.component';
 import { FormVentaComponent } from './venta/form-venta.component';
 import { ServicioComponent } from './servicio/servicio.component';
+import { FormServicioComponent } from './servicio/form-servicio.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ServicioComponent } from './servicio/servicio.component';
     FormProductoComponent,
     VentaComponent,
     FormVentaComponent,
-    ServicioComponent
+    ServicioComponent,
+    FormServicioComponent
 
   ],
   imports: [
