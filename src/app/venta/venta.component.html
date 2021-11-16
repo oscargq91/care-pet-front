@@ -1,0 +1,38 @@
+<div class="card border-success mb-3">
+    <div class="card-header">Productos Tienda</div>
+    <div class="card-body text-success">
+      <h5 class="card-title">Listado de Productos</h5>
+      
+   
+        <table class="table table-bordered table-striped">
+     
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Descripción</th>
+                <th>Categoria</th>
+                <th>Comprar</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let producto of productos">
+                <td>{{producto.id}}</td>
+                <td>{{producto.nombre}}</td>
+                <td>{{producto.precio}}</td>
+                <td>{{producto.descripcion}}</td>
+                <td>{{producto.categoria.nombre}}</td>
+                <td>
+                    <button type="button" name="comprar" (click)='create(producto)' class="btn btn-success btn-sm">Comprar</button>
+                  </td>
+              
+            </tr>
+        </tbody>
+    </table>
+    </div>
+  </div>
+
+
